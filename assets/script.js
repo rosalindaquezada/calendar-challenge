@@ -1,12 +1,10 @@
 const dayOfWeek = moment().format("dddd MMM Do YYYY"); 
-const timeOfDay = moment().format("hh:mm");
 const inputRefList = []; 
 const events = []; 
 
 
 // current day
 $("#currentDay").append("<div class=>" + dayOfWeek + "</div>");
-$("#currentTime").append("<div class=>" + timeOfDay + "</div>");
 
 function init() {
   const savedEvents = JSON.parse(localStorage.getItem("events"));
